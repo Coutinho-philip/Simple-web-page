@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="building simple web page">
+        <title>cotmocollection</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: ;
+                height: 100vh;
+                background-color: rgb(0, 162, 255);
+            }
+            .form-container{
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(red, green, blue);
+            }
+            input{
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 8px;
+                 }
+                 button{
+                    background-color: azure;
+                    color: rgb(17, 1, 1);
+                    padding: 10px;
+                    border: none;
+                    cursor: pointer;
+                 }
+        </style>
+    </head>
+    <body>
+        <div class="form container">
+            <h2>Register</h2>
+            <form id="registrationForm">
+                <input type="text" id="name" placeholder="Full name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <script>
+             document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            
+            if (name && email && password) {
+                alert('Registration Successful!');
+            } else {
+                alert('Please fill all fields.');
+            }
+        });
+        </script>
+        </style>
+        <title>Contact Table</title>
+        <style>
+            table {
+                width: 50%;
+                height: 50%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                font-size: 14px;
+                text-align: left;
+            }
+            th, td {
+                border: 1px solid #141111cc;
+                padding: 8px;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h2>Contact List</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Philip Coutinho</td>
+                <td>+254704005227</td>
+                <td>philipcotmo@gmail.com</td>
+            </tr>
+            
+        </table>
+    
+        <header>
+            <h1>My Shoe Collection</h1>
+            <nav>
+                <a href="https://www.bing.com/search?q=best+shoe+outfits+for+men&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=best+shoe+outfits+for+men&sc=12-25&sk=&cvid=0A218C4DEEDE4FA69300B5ACD45C04D5&ghsh=0&ghacc=0&ghpl=">Best shoe images</a>
+            </nav>
+        </header>
+        <section id="Accessibility">
+            <h2>Availability</h2>
+            <p>jordan,
+                Airfoce,
+                Safari Boots and
+                ALL Closed Shoes
+            </p>
+            <img src="c:\photos\IMG-20250307-WA0019.jpg" width="150" height="200" alt="sneaker">
+        </section>
+        <section id="seo">
+            <h2>cleaning</h2>
+            <p>after wearing always clean with form cleaner </p>
+            <img src="c:\photos\IMG-20250308-WA0005.jpg" width="150" height="200">
+        </section>
+        <footer>
+            <p>@copyrite2025</p>
+        </footer>
+    </body>
+</html>
